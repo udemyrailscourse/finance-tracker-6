@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <%= link_to 'FinanceTracker', root_path, class: 'navbar-brand' %>
-            <% if current_user %> 
+        <% if current_user %> 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,7 +32,7 @@
                 <ul class='navbar-nav ml-auto'>
                     <li class='nav-item'>
                         <%= link_to("Logout", destroy_user_session_path,
-                            class: "btn btn-xs btn-danger logout-button", method: :delete)%>
+                            class: "btn btn-danger logout-button", method: :delete)%>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
