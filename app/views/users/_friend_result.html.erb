@@ -13,7 +13,7 @@
             <td><strong>Actions: </strong> <%= link_to "View Profile", '#',
                               class: "btn btn-sm btn-success" %>
               <% if current_user.not_friends_with?(friend.id) %>
-                <%= link_to 'Follow friend?', '#',
+                <%= link_to 'Follow friend?', friendships_path(friend: friend),
                               class: "btn btn-sm btn-success", method: :post %>
               <% else %>
                 <span class="badge badge-secondar">
